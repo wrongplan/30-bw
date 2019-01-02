@@ -9,6 +9,8 @@
   <link rel="shortcut icon" type="image/png" href="img\camera-icon.png" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
+
+    <link href="dist/css/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -57,7 +59,7 @@
 
 
     <div class="mainTitle__title">
-      <h1>LOREM IPSUM</h1>
+      <h1 data-title="title">Io</h1>
     </div>
 
     <!-- <div class="mainTitle__photoContainer">
@@ -69,7 +71,7 @@
   <!-- ++++ END mainTitle section ++++ -->
 
 
-<!-- +++++ ABOUT section ++++ -->
+  <!-- +++++ ABOUT section ++++ -->
   <section class="about__wrapper">
     <!-- START traingle -->
     <div class="traingle--position">
@@ -97,15 +99,19 @@
               corporis vero modi dolorum quaerat, ipsa doloribus repellat cupiditate, ea laudantium culpa explicabo?
               Ipsum quasi tenetur, nulla repellat id eum. Quisquam deleniti sequi neque rerum delectus nam debitis
               aspernatur commodi omnis laborum? Nisi, aspernatur.</p>
-              <p data-paragraph="add" class="about__paragraph ReadMore">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-              </p>
-              <p data-about="add" class="readMore">
-                Read More
-              </p>
+            <p data-paragraph="add" class="about__paragraph ReadMore">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+            </p>
+            <p data-about="add" class="readMore">
+              Read More
+            </p>
           </div>
         </div>
       </div>
@@ -113,7 +119,8 @@
 
 
   </section>
-
+  <!-- +++++ END section ++++ -->
+  <!-- +++++ START section ++++ -->
   <section class="info__wrapper">
 
     <div class="traingle--position">
@@ -123,40 +130,109 @@
         </div>
       </div>
     </div>
-      <!-- <div class="clearfix"></div> -->
+    <!-- <div class="clearfix"></div> -->
 
-      <div class="container info--margin">
-        <div class="row info--justfyRow">
-          <div class="col-12 col-md-6">
-            <div class="info__container">
-              <h1 class="info__title">Lorem ipsum dolor sit amet consectetur </h1>
-              <p class="info__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid
-                  provident nihil? Dicta explicabo amet dolor, exercitationem fuga iste consequatur voluptate cumque
-                  sapiente id odit reprehenderit pariatur at cum. Impedit nisi quasi veritatis quisquam consequuntur
-                  aliquam sit iure, quae fugit sed voluptate asperiores, recusandae labore neque. Consequatur iusto, est
-                  corporis vero modi dolorum quaerat, ipsa doloribus repellat cupiditate, ea laudantium culpa explicabo?
-                  Ipsum quasi tenetur, nulla repellat id eum. Quisquam deleniti sequi neque rerum delectus nam debitis
-                  aspernatur commodi omnis laborum? Nisi, aspernatur.</p>
-              <p data-paragraphInfo="add" class="about__paragraph ReadMore">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
-                </p>
-                <p data-info="add" class="readMore">
-                  Read More
-                </p>
-            </div>
+    <div class="container info--margin">
+      <div class="row info--justfyRow">
+        <div class="col-12 col-md-6">
+          <div class="info__container">
+            <h1 class="info__title">Lorem ipsum dolor sit amet consectetur </h1>
+            <p class="info__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid
+              provident nihil? Dicta explicabo amet dolor, exercitationem fuga iste consequatur voluptate cumque
+              sapiente id odit reprehenderit pariatur at cum. Impedit nisi quasi veritatis quisquam consequuntur
+              aliquam sit iure, quae fugit sed voluptate asperiores, recusandae labore neque. Consequatur iusto, est
+              corporis vero modi dolorum quaerat, ipsa doloribus repellat cupiditate, ea laudantium culpa explicabo?
+              Ipsum quasi tenetur, nulla repellat id eum. Quisquam deleniti sequi neque rerum delectus nam debitis
+              aspernatur commodi omnis laborum? Nisi, aspernatur.</p>
+            <p data-paragraphInfo="add" class="about__paragraph ReadMore">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae quos quam saepe fuga necessitatibus
+              molestiae sequi hic aliquid vitae quidem velit optio, error deleniti omnis, alias quae ipsa tempora.
+            </p>
+            <p data-info="add" class="readMore">
+              Read More
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
 
   </section>
+  <!-- +++++ END INFO section ++++ -->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="js.js"></script>
+  <!-- +++++ START Galery section ++++ -->
+  <section class="galery__wrapper">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 galery__oneThirdCont">
+          <div class="galery__imgWrapper">
+              <a href="img/jass.jpg" data-lightbox="image-1" data-title="Jass">
+            <img src="img/jass.jpg" alt="" class="galery__imgInner">
+          </a>
+
+          </div>
+          <p class="galery__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium ab
+            reiciendis ducimus praesentium numquam possimus nobis doloremque quae. Magni sat nulla nostrum, vel
+            recusandae praesentium libero explicabo esse veritatis, tempore velit voluptatibus, eligendi numquam
+            corporis veniam? Quasi, doloribus excepturi commodi quod est quis praesentium.</p>
+          <!-- button -->
+          <div class="galery__btnContainer">
+            <a class="galery__btn" role="button" href="#">LOREM</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 galery__oneThirdCont galery__oneThirdCont--margin">
+          <div class="galery__imgWrapper">
+              <a href="img/jass.jpg" data-lightbox="image-1" data-title="Jass">
+                <img src="img/jass.jpg" alt="" class="galery__imgInner">
+              </a>
+          </div>
+
+          <p class="galery__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium ab
+            reiciendis ducimus explicabo esse veritatis, tempore velit voluptatibus, eligendi numquam corporis veniam?
+            Quasi, doloribus excepturi commodi quod est quis praesentium.</p>
+
+          <!-- button -->
+          <div class="galery__btnContainer">
+            <a class="galery__btn" role="button" href="#">LOREM</a>
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 galery__oneThirdCont">
+          <div class="galery__imgWrapper">
+              <a href="img/jass.jpg" data-lightbox="image-1" data-title="Jass">
+                <img src="img/jass.jpg" alt="" class="galery__imgInner">
+              </a>
+          </div>
+
+          <p class="galery__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium ab
+            reiciendis ducimus praesentium numquam possimus nobis doloremque quae. Magni sat nulla nostrum, vel
+            recusandae praesentium libero
+            praesentium numquam possimus nobis doloremque quae. Magni sat nulla nostrum, vel recusandae praesentium
+            libero explicabo esse veritatis, tempore velit voluptatibus, eligendi numquam corporis veniam? Quasi,
+            doloribus excepturi commodi quod est quis praesentium.</p>
+
+          <!-- button -->
+          <div class="galery__btnContainer">
+            <a class="galery__btn" role="button" href="#">LOREM</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    <script src="dist/js/lightbox.js"></script>
 </body>
 
 </html>
