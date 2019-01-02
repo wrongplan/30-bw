@@ -379,6 +379,11 @@ header {
 }
 @media (min-width: 992px) {
   .galery__oneThirdCont {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .galery__oneThirdCont {
     max-width: calc(100%/3 - 4px);
   }
 }
