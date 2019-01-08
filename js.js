@@ -6,6 +6,26 @@ $(".logoAndNav__burger").on("click", function(){
   $(".logoAndNav__burger").toggleClass("active");
   
 })
+//nav slide down
+//nasłuchaiwanie na klik i funkcję która doda klasę add
+$(".logoAndNav__burger").on("click", function(){
+  const navSlide = $(".logoAndNav__navigation");
+
+  $(navSlide).toggleClass("active");
+})
+
+//scrolowanie do sekcji
+//doać na słuchiwanie, funckja ma pobrać this i wartość z data-name i przypisać ją do data-name docelowago elementu, a później zrobić przesunięcie z animacją
+
+$("[data-menu-item]").on("click", function(){
+  const dataItem = "[data-menu=" + $(this).attr("data-menu-item") + "]" ;
+  const navH = $(".logoAndNav").outerHeight();
+  console.log(dataItem)
+  $("body, html").animate({
+    scrollTop:$(dataItem).offset().top - navH
+  })
+})
+
 
 // read more
 /* funkcja ma działać po kliknięciu w p.readMore, po kliknięciu ma pobrać DATA-NAME i i do data-paragraph dodać toggle
@@ -31,20 +51,32 @@ $("p.readMore").on("click", function(){
 
 $("p.readMore").on("click", function(){
 
-  const readLessAbout = $("p[data-about='add']")
+
+  if($(this).text() == "Read More"){
+    console.log($(this));
+    $(this).text("Read Less")
+    //    $(about).textContent= "<p>Readddd More</p>"
+  }
+    else{
+     
+      $(this).text("Read More")
+      // $("p[data-about='add']").textContent= "<p>Readddd dupa</p>"
+    }
   
+  })
 
   //if($($readLessAbout).text( "<p>Read More</p>" )){
-
-if(readLessAbout.innerHTML === "Read More"){
+/*
+if(readLessAbout.innerHTML == "Read More"){
   readLessAbout.innerHTML = "Readddd More"
   //    $(about).textContent= "<p>Readddd More</p>"
 }
   else{
-    $("p[data-about='add']").textContent= "<p>Readddd dupa</p>"
+    $("p[data-about='add']").textContent= "<p>Readddd upa</p>"
   }
 
 })
+*/
 
 // slide section
 // napisać funkcję która zna bierzącą wysokość scrolltop, jeżeli scrolltop > wysokość sekcji + jej przesunięcie od góry (offset) - wysokość window to dodać klasę
@@ -86,7 +118,7 @@ $(window).on("scroll", slideFunction);
 Muszę napisać funkcję będzie miała:
 a) tablicę zdjęć
 b) tablicę napisów
-FUNKCJA musi co 2 sekundy zmieniać zdjecie, czyli pobrać z tablicy i wstawić w miejsce starego */
+FUNKCJA musi co 4 sekundy zmieniać zdjecie, czyli pobrać z tablicy i wstawić w miejsce starego */
 
 let acviveElement = 0;
 let timeChange = 4000;

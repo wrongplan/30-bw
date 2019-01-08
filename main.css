@@ -41,6 +41,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
+  z-index: 5;
 }
 .logoAndNav__burger span {
   display: block;
@@ -91,8 +92,43 @@ header {
   background: #a85252;
   top: calc(50% - 4px/2);
 }
+.logoAndNav__navWrapper {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+}
 .logoAndNav__navigation {
-  display: none;
+  position: absolute;
+  top: -110px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #ffffff;
+  box-shadow: 1px 0 5px 2px black;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+.logoAndNav__navigation.active {
+  top: 0;
+  animation: toggleNav 0.3s;
+}
+@keyframes toggleNav {
+  0% {
+    height: 100px;
+  }
+  30% {
+    height: 100px;
+  }
+  60% {
+    height: 110px;
+  }
+  80% {
+    height: 110px;
+  }
+  100% {
+    height: 100px;
+  }
 }
 .mainTitle {
   width: 100%;

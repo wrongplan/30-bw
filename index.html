@@ -27,7 +27,7 @@
             </div>
           </div>
 
-          <div class="col-2 col-md-6 offset-4 offset-md-1">
+          <div class="col-2 col-md-6 offset-4 offset-md-1 logoAndNav__navWrapper">
             <div class="logoAndNav__burger">
               <span></span>
               <span></span>
@@ -37,7 +37,9 @@
 
             <nav class="logoAndNav__navigation">
               <ul>
-                <li class="menu__item"><a href="#">LOREM</a></li>
+                <li data-menu-item="about" class="menu__item"><a href="#">About</a></li>
+                <li data-menu-item="info" class="menu__item"><a href="#">Info</a></li>
+                <li data-menu-item="galery" class="menu__item"><a href="#">Galery</a></li>
 
               </ul>
             </nav>
@@ -72,12 +74,12 @@
 
 
   <!-- +++++ ABOUT section ++++ -->
-  <section class="about__wrapper">
+  <section data-menu="about" class="about__wrapper">
     <!-- START traingle -->
     <div class="traingle--position">
       <div class="triangle about__triangle--left">
         <div class="about__triangleContainer">
-          <h3>Lorem ipsum</h3>
+          <h3>About</h3>
         </div>
       </div>
     </div>
@@ -121,12 +123,12 @@
   </section>
   <!-- +++++ END section ++++ -->
   <!-- +++++ START section ++++ -->
-  <section class="info__wrapper">
+  <section data-menu="info" class="info__wrapper">
 
     <div class="traingle--position">
       <div class="triangle info__triangle--right ">
         <div class="info__triangleContainer">
-          <h3>Lorem ipsum dolor sit </h3>
+          <h3>Info </h3>
         </div>
       </div>
     </div>
@@ -167,7 +169,7 @@
   <!-- +++++ END INFO section ++++ -->
 
   <!-- +++++ START Galery section ++++ -->
-  <section class="galery__wrapper">
+  <section data-menu="galery" class="galery__wrapper">
 
     <div class="container">
       <div class="row">
